@@ -1,0 +1,24 @@
+{
+  "name": "ppi-first-class",
+  "version": "0.1.0",
+  "description": "Aula ao vivo PPI - ads - ead",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G4bslol/PPI-First-Class.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G4bslol/PPI-First-Class/issues"
+  },
+  "homepage": "https://github.com/G4bslol/PPI-First-Class#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}
