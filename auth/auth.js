@@ -27,11 +27,11 @@ export function validateAuth(req, res, nextStep){
     if(req.session.auth != undefined && req.session.auth == true) {
         nextStep()
     } else {
-        res.redirect('/login.html')
+        res.redirect('/main.html')
     }
 }
 
 export function logout(req, res) {
     req.session.auth = undefined;
-    res.redirect('./login.html')
+    res.redirect('./main.html')
 }

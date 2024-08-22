@@ -1,17 +1,17 @@
 import express from 'express';
 import auth from './auth/auth.js';
-import { validateAuth, logout } from './auth/auth.js'
+import { validateAuth } from './auth/auth.js'
 import session from 'express-session';
 
-const host = '0.0.0.0' //todas as interfaces de rede disponíveis
-const port = 3000 // em um computador há diversos programas sendo executados, e cada um é identificado pela porta
-const app = express()
+const host = '0.0.0.0';
+const port = 3333;
+const app = express();
 
-//Biblioteca qs fará o tratamento dos parametros das requisições
+
 app.use(express.urlencoded({ extended: true }))
 
 app.use(session({
-    secret: 'segredo', //chave para criptografia
+    secret: 'segredo',
     resave: true,
     saveUninitialized: true,
     cookie: {
@@ -19,19 +19,19 @@ app.use(session({
     }
 }))
 
-app.use(express.static('./plubic'))
+// app.use(validateAuth, express.static('./private'))
+app.use(express.static('./public', (req, res) => {
+    res.send('Pagina não encontrada')
+}))
 
-app.get('/login', (req, res) => {
-    res.redirect('/login.html')
+app.use((req, res) => {
+    res.redirect('/main.html')
 })
-
-app.get('/logout', logout)
 
 app.post('/login', auth)
 
-app.use(validateAuth, express.static('./private'))
 
-//listen = escutar por requisições dos usuários
+
 app.listen(port, host, () => {
     console.log(`Servidor rodando em http://${host}:${port}`)
 }) 

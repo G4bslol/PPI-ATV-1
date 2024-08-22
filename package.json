@@ -1,22 +1,23 @@
 {
-  "name": "ppi-first-class",
-  "version": "0.1.0",
-  "description": "Aula ao vivo PPI - ads - ead",
+  "name": "atividadeppi",
+  "version": "1.0.0",
+  "description": "Atividade para avaliação primeiro bimestre PPI",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "npm"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/G4bslol/PPI-First-Class.git"
+    "url": "git+https://github.com/G4bslol/PPI-ATV-1.git"
   },
-  "author": "",
+  "author": "Gabriel Lucas Perosso Alves",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/G4bslol/PPI-First-Class/issues"
+    "url": "https://github.com/G4bslol/PPI-ATV-1/issues"
   },
-  "homepage": "https://github.com/G4bslol/PPI-First-Class#readme",
+  "homepage": "https://github.com/G4bslol/PPI-ATV-1#readme",
   "dependencies": {
     "express": "^4.19.2",
     "express-session": "^1.18.0"
