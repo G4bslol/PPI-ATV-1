@@ -2,22 +2,71 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <meta charset="utf-8">
-    <title>Efetue login no sistema</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3472/3472688.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <form method="post" action="/login">
-                <h3>Acesso ao Sistema</h3>
-                <input type="text" id="user" name="user" placeholder="usuário" required>
-                <input type="password" id="password" name="password" placeholder="senha" required>
-                <button type="submit">LOGIN</button>
-            </form>
-        </div>
-    </div>
+  <header class="header">
+    <h1 class="home_page_title">Vendas de Ingressos - Online</h1>
+
+    <nav>
+      <a href="/main">Voltar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="events">
+      <h2 class="event_title_main">Listas de Eventos</h2>
+
+      <div class="event-grid">
+        <article class="event-generic">
+          <h3 class="event_title">Festival das Cores</h3>
+          <p class="event_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi nobis
+            alias assumenda cum dolore quidem ab possimus et sit animi, vitae accusantium. Vitae nisi delectus, veniam
+            animi quae officia.</p>
+          <p class="date-event">Data: 15/11/2025</p>
+          <p class="date-event">Local: Praça Central, Av. dos Pioneiros, Centro - Barretos - SP</p>
+          <p class="date-event">Valor do Igresso: R$49,90</p>
+        </article>
+        <article class="event-generic">
+          <h3 class="event_title">Noite do Jazz</h3>
+          <p class="event_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi nobis
+            alias assumenda cum dolore quidem ab possimus et sit animi, vitae accusantium. Vitae nisi delectus, veniam
+            animi quae officia.</p>
+          <p class="date-event">Data: 07/12/2025</p>
+          <p class="date-event">Local: Teatro Municipal, Rua das Artes, Centro - Campinas - SP</p>
+          <p class="date-event">Valor do Igresso: R$89,00</p>
+        </article>
+        <article class="event-generic">
+          <h3 class="event_title">Feira de Artesanato</h3>
+          <p class="event_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi nobis
+            alias assumenda cum dolore quidem ab possimus et sit animi, vitae accusantium. Vitae nisi delectus, veniam
+            animi quae officia.</p>
+          <p class="date-event">Data: 30/08/2025</p>
+          <p class="date-event">Local: Parque das Flores, Av. João Pessoa, Jardim - Ribeirão Preto - SP</p>
+          <p class="date-event">Valor do Igresso: R$32,49</p>
+        </article>
+        <article class="event-generic">
+          <h3 class="event_title">Concerto de Verão</h3>
+          <p class="event_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi nobis
+            alias assumenda cum dolore quidem ab possimus et sit animi, vitae accusantium. Vitae nisi delectus, veniam
+            animi quae officia.</p>
+          <p class="date-event">Data: 22/01/2026</p>
+          <p class="date-event">Local: Anfiteatro Lago Azul, Av. Beira-Mar, Zona Sul - Santos - SP</p>
+          <p class="date-event">Valor do Igresso: R$65,00</p>
+        </article>
+
+      </div>
+    </section>
+
 </body>
 
 </html>

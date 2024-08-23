@@ -18,19 +18,18 @@ app.use(session({
         maxAge: 1000 * 60 * 15
     }
 }))
-
+ 
 // app.use(validateAuth, express.static('./private'))
 app.use(express.static('./public', (req, res) => {
     res.send('Pagina não encontrada')
 }))
+ 
+
+app.post('/login', auth)
 
 app.use((req, res) => {
     res.redirect('/main.html')
 })
-
-app.post('/login', auth)
-
-
 
 app.listen(port, host, () => {
     console.log(`Servidor rodando em http://${host}:${port}`)
