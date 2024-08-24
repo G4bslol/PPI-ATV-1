@@ -9,8 +9,10 @@
   <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3472/3472688.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,7 +20,7 @@
     <h1 class="home_page_title">Vendas de Ingressos - Online</h1>
 
     <nav>
-      <a href="/main">Voltar</a>
+      <a href="/main"><button>Voltar</button></a>
     </nav>
   </header>
 
@@ -28,40 +30,70 @@
 
       <div class="event-grid">
         <article class="event-generic">
+          <img src="images/colors.jpeg" alt="">
           <h3 class="event_title">Festival das Cores</h3>
-          <p class="event_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi nobis
-            alias assumenda cum dolore quidem ab possimus et sit animi, vitae accusantium. Vitae nisi delectus, veniam
-            animi quae officia.</p>
-          <p class="date-event">Data: 15/11/2025</p>
-          <p class="date-event">Local: Praça Central, Av. dos Pioneiros, Centro - Barretos - SP</p>
-          <p class="date-event">Valor do Igresso: R$49,90</p>
+          <p class="event_description">Inspirado no festival hindu Holi, o Festival das Cores é uma celebração vibrante
+            e alegre, onde os participantes jogam pó colorido uns nos outros, criando um espetáculo de cores. É um
+            evento que promove a alegria, a união e a diversidade cultural, geralmente acompanhado por música, dança e
+            atividades recreativas ao ar livre.</p>
+          <div class="event-generic-info">
+            <p class="date-event"><strong>Local:</strong> Praça Central, Av. dos Pioneiros, Centro - Barretos - SP</p>
+            <p class="date-event"><strong>Data:</strong> 15/11/2025</p>
+            <p class="date-event"><strong>Ingresso:</strong> R$49,90</p>
+          </div>
+          <form type="post" action="/details1">
+            <button type="submit">Detalhes</button>
+          </form>
         </article>
         <article class="event-generic">
+          <img src="images/jazz.jpeg" alt="">
           <h3 class="event_title">Noite do Jazz</h3>
-          <p class="event_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi nobis
-            alias assumenda cum dolore quidem ab possimus et sit animi, vitae accusantium. Vitae nisi delectus, veniam
-            animi quae officia.</p>
-          <p class="date-event">Data: 07/12/2025</p>
-          <p class="date-event">Local: Teatro Municipal, Rua das Artes, Centro - Campinas - SP</p>
-          <p class="date-event">Valor do Igresso: R$89,00</p>
+          <p class="event_description">A Noite do Jazz é um evento dedicado aos amantes do jazz, com apresentações de
+            músicos locais e convidados especiais. O ambiente é sofisticado e acolhedor, perfeito para apreciar o
+            improviso e a musicalidade do jazz. O evento pode ocorrer em bares, clubes ou ao ar livre, oferecendo uma
+            experiência cultural rica e intimista.</p>
+          <div class="event-generic-info">
+            <p class="date-event"><strong>Local:</strong> Teatro Municipal, Rua das Artes, Centro - Campinas - SP</p>
+            <p class="date-event"><strong>Data:</strong> 07/12/2025</p>
+            <p class="date-event"><strong>Ingresso:</strong> R$89,00</p>
+          </div>
+          <form type="post" action="/details2">
+            <button type="submit">Detalhes</button>
+          </form>
         </article>
         <article class="event-generic">
+          <img src="images/artesanato.jpeg" alt="">
           <h3 class="event_title">Feira de Artesanato</h3>
-          <p class="event_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi nobis
-            alias assumenda cum dolore quidem ab possimus et sit animi, vitae accusantium. Vitae nisi delectus, veniam
-            animi quae officia.</p>
-          <p class="date-event">Data: 30/08/2025</p>
-          <p class="date-event">Local: Parque das Flores, Av. João Pessoa, Jardim - Ribeirão Preto - SP</p>
-          <p class="date-event">Valor do Igresso: R$32,49</p>
+          <p class="event_description">A Feira de Artesanato é um evento que reúne artesãos locais para expor e vender
+            seus produtos feitos à mão. É uma oportunidade para o público conhecer trabalhos únicos e tradicionais, que
+            variam de peças decorativas a acessórios e utilitários. Além das compras, a feira costuma incluir
+            demonstrações de técnicas artesanais e atividades interativas.</p>
+          <div class="event-generic-info">
+            <p class="date-event"><strong>Local:</strong> Parque das Flores, Av. João Pessoa, Jardim - Ribeirão Preto
+              -SP</p>
+            <p class="date-event"><strong>Data:</strong> 30/08/2025</p>
+            <p class="date-event"><strong>Ingresso:</strong> R$32,49</p>
+          </div>
+          <form type="post" action="/details3">
+            <button type="submit">Detalhes</button>
+          </form>
         </article>
         <article class="event-generic">
+          <img src="images/beach.jpeg" alt="">
           <h3 class="event_title">Concerto de Verão</h3>
-          <p class="event_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi nobis
-            alias assumenda cum dolore quidem ab possimus et sit animi, vitae accusantium. Vitae nisi delectus, veniam
-            animi quae officia.</p>
-          <p class="date-event">Data: 22/01/2026</p>
-          <p class="date-event">Local: Anfiteatro Lago Azul, Av. Beira-Mar, Zona Sul - Santos - SP</p>
-          <p class="date-event">Valor do Igresso: R$65,00</p>
+          <p class="event_description">O Concerto de Verão é um evento musical ao ar livre que celebra a estação mais
+            quente do ano. Geralmente realizado em parques ou praças, apresenta uma variedade de gêneros musicais, com
+            bandas e orquestras que proporcionam uma experiência sonora agradável e relaxante. É um evento perfeito para
+            reunir a família e os amigos, desfrutando de música ao vivo em um ambiente descontraído.</p>
+          <div class="event-generic-info">
+            <p class="date-event"><strong>Local:</strong> Anfiteatro Lago Azul, Av. Beira-Mar, Zona Sul - Santos - SP
+            </p>
+            <p class="date-event"><strong>Data:</strong> 22/01/2026</p>
+            <p class="date-event"><strong>Ingresso:</strong> R$65,00</p>
+          </div>
+          <form type="post" action="/details4">
+            <button type="submit">Detalhes</button>
+          </form>
         </article>
 
       </div>

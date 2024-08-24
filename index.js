@@ -23,13 +23,18 @@ app.use(session({
 app.use(express.static('./public', (req, res) => {
     res.send('Pagina não encontrada')
 }))
- 
+
+app.get('/detalhes1', (req, res) => {
+    res.redirect('/details.html')
+})
 
 app.post('/login', auth)
 
 app.use((req, res) => {
     res.redirect('/main.html')
 })
+
+app.use(validateAuth, express.static('./private'))
 
 app.listen(port, host, () => {
     console.log(`Servidor rodando em http://${host}:${port}`)

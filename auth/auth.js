@@ -4,7 +4,9 @@ export default function auth(req, res) {
 
     if (user == 'admin' && password == 'admin') {
         req.session.auth = true
-        res.redirect('/menu.html')
+        const endereco = '/' + req.session.url
+        console.log(req.session.url)
+        res.redirect('/detais')
     } else {
         res.write('<html>');
         res.write('<head>');
@@ -12,7 +14,7 @@ export default function auth(req, res) {
         res.write('<meta charset="utf-8">');
         res.write('</head>');
         res.write('<body>');
-        res.write('<p>Usuário ou senha inválidos</p>');
+        res.write('<h1>Usuário ou senha inválidos</h1>');
         res.write('<a href="/login.html">Voltar para tela de login</a>');
         res.write('</body>');
         res.write('</html>');
@@ -27,7 +29,7 @@ export function validateAuth(req, res, nextStep){
     if(req.session.auth != undefined && req.session.auth == true) {
         nextStep()
     } else {
-        res.redirect('/main.html')
+        res.redirect('/login.html')
     }
 }
 
