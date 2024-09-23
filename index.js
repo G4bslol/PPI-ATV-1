@@ -19,7 +19,6 @@ app.use(session({
     }
 }))
  
-// app.use(validateAuth, express.static('./private'))
 app.use(express.static('./public', (req, res) => {
     res.send('Pagina não encontrada')
 }))
