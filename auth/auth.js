@@ -4,9 +4,7 @@ export default function auth(req, res) {
 
     if (user == 'admin' && password == 'admin') {
         req.session.auth = true
-        const endereco = '/' + req.session.url
-        console.log(req.session.url)
-        res.redirect('/detais')
+        res.redirect('/main')
     } else {
         res.write('<html>');
         res.write('<head>');

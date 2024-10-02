@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/G4bslol/PPI-ATV-1#readme",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "express": "^4.19.2",
     "express-session": "^1.18.0"
   },

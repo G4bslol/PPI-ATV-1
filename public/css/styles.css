@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -79,7 +77,8 @@ img {
     padding: 15px;
     border: 1px solid #fff5;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px #fff3 ;
+    box-shadow: 0px 0px 10px #fff3;
+
 }
 
 .event-generic h3 {
@@ -98,7 +97,7 @@ img {
     font-size: 12px;
 }
 
-.event-generic-info{
+.event-generic-info {
     margin-top: 15px;
     text-align: justify;
     display: grid;
@@ -108,12 +107,12 @@ img {
     text-align: center;
 }
 
-.event-generic-info p:nth-child(1){
+.event-generic-info p:nth-child(1) {
     grid-area: 1 / 2 / 4 / 3;
-	grid-row-start: 1;
-	grid-column-start: 1;
-	grid-row-end: 2;
-	grid-column-end: 3;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
 }
 
 button {
@@ -125,7 +124,7 @@ button {
     color: #fff;
 }
 
-button:hover{
+button:hover {
     background-color: #2332A0;
     transition: 0.5s;
 
@@ -140,17 +139,16 @@ button:hover{
     padding: 40px;
 }
 
-.container{
-    width: 100vw;
+.container {
     height: 100vh;
-    background: #0E1011;;
+    background: #0E1011;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.box{
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +168,7 @@ form h3 {
 
 form input {
     background-color: #0E1011;
-    width: 70%;
+    width: 200px;
     height: 30px;
     margin: 5px 0;
     border-radius: 5px;
@@ -189,4 +187,66 @@ form input {
     font-size: 14px;
     transition: all 0.3 ease;
     cursor: pointer;
-  }
+}
+
+.formBox {
+    height: 85vh;
+    background: #0E1011;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #141618;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgb(75, 75, 75);
+    border: #162066 solid 1px;
+    border-radius: 10px;
+}
+
+.formBox form {
+    display: inline-block;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.formBox form input {
+    padding: 5px;
+    background-color: #0E1011;
+    width: 90%;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    color: white;
+}
+
+.formBox .container {
+    height: fit-content;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.container tr, td {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+table {
+    width: 80vw;
+}

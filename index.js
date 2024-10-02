@@ -18,22 +18,25 @@ app.use(session({
         maxAge: 1000 * 60 * 15
     }
 }))
- 
+
 app.use(express.static('./public', (req, res) => {
     res.send('Pagina não encontrada')
 }))
 
-app.get('/detalhes1', (req, res) => {
-    res.redirect('/details.html')
+app.get('/events', (req, res) => {
+    res.redirect('/eventos.html')
 })
 
 app.post('/login', auth)
 
-app.use((req, res) => {
-    res.redirect('/main.html')
-})
+app.use(validateAuth, express.static('./private', (req, res) => {
+    res.redirect('/eventos.html')
+}))
 
-app.use(validateAuth, express.static('./private'))
+
+app.use((req, res) => {
+    res.status(404).redirect('/main.html');
+});
 
 app.listen(port, host, () => {
     console.log(`Servidor rodando em http://${host}:${port}`)

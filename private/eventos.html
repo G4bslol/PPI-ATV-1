@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="utf-8">
+    <title>Página Detalhes dos Eventos</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3472/3472688.png">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="home_page_title">Vendas de Ingressos - Online</h1>
+
+        <nav>
+            <a href="/main"><button>Voltar</button></a>
+        </nav>
+
+    </header>
+
+    <div class="formBox">
+        <div class="box">
+            <form id="formEvent" method="post" action="#">
+                <h3>Cadastro de Evento</h3>
+                <input type="text" id="title" name="title" placeholder="TÍTULO">
+                <input type="text" id="description" name="description" placeholder="DESCRIÇÃO COMPLETA">
+                <input type="text" id="local" name="local" placeholder="ENDEREÇO">
+                <input type="text" id="date" name="date" placeholder="DATA">
+                <input type="number" id="ticketValue" name="ticketValue" placeholder="VALOR DO INGRESSO">
+                <button id="confirmButton" type="submit">CADASTRAR</button>
+                <button type="button">CANCELAR</button>
+
+                <div id="message"></div>
+
+            </form>
+
+        </div>
+
+        <div class="container" id="containerTabel"></div>
+
+    </div>
+</body>
+
+<script src="./js/event.js"></script>
+
+</html>
